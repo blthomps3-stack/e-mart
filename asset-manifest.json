@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/blthomps3-stack/e-mart.git/static/css/main.e0052fcd.css",
+    "main.js": "/blthomps3-stack/e-mart.git/static/js/main.f718987a.js",
+    "index.html": "/blthomps3-stack/e-mart.git/index.html",
+    "main.e0052fcd.css.map": "/blthomps3-stack/e-mart.git/static/css/main.e0052fcd.css.map",
+    "main.f718987a.js.map": "/blthomps3-stack/e-mart.git/static/js/main.f718987a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0052fcd.css",
+    "static/js/main.f718987a.js"
+  ]
+}

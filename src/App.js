@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import ProductCard from './components/ProductCard';
 import Home from './pages/Home';
+import Cart from './pages/Cart';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Home />
       <ProductCard />
+      <Cart />
     </>
   );
 }

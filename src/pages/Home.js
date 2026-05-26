@@ -1,13 +1,22 @@
 import React from 'react';
 
-export default function ProductCard() {
+export default function Home() {
   return (
-    <div>
-      <span>Category Label</span>
-      <h4>Sample Product Title</h4>
-      <p>$99.99</p>
-      <a href="/product">Details</a>
-      <button type="button">Add to Cart</button>
-    </div>
+    <main>
+      <section>
+        <h2>Marketplace Main Headline</h2>
+        <p>Promo description text banner goes here.</p>
+      </section>
+
+      <div>
+        <button type="button">Category 1</button>
+        <button type="button">Category 2</button>
+        <select>
+          <option value="">Sort Products</option>
+          <option value="price">Price</option>
+          <option value="name">Name</option>
+        </select>
+      </div>
+    </main>
   );
 }

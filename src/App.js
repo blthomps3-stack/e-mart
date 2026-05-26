@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import ProductCard from './components/ProductCard';
 import Home from './pages/Home';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <Home />
+      <ProductCard />
     </>
   );
 }

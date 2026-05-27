@@ -3,9 +3,10 @@ import React from 'react';
 export default function Home() {
   return (
     <main>
-      <section>
-        <h2>Marketplace Main Headline</h2>
-        <p>Promo description text banner goes here.</p>
+      <section className="hero">
+          <h2>Marketplace Main Headline</h2>
+          <p>Promo description text banner goes here.</p>
+          <button>Shop Now</button>
       </section>
 
       <div>

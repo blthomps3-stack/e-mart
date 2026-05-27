@@ -94,3 +94,46 @@ nav a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
+
+.product-card {
+    background-color: #1e293b;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    font-size: 1.8rem;
+}
+
+.product-card p {
+    font-size: 2rem;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.product-card button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #38bdf8;
+    color: white;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #0284c7;
+}

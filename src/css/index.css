@@ -78,3 +78,19 @@ nav a:hover {
 .hero button:hover {
     background-color: #0284c7;
 }
+
+.products-section {
+    padding: 60px;
+}
+
+.products-section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}

@@ -164,3 +164,38 @@ nav a:hover {
     border-radius: 12px;
     margin-bottom: 15px;
 }
+
+.promo-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #111827, #1e293b);
+}
+
+.promo-content h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.promo-content p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 2rem;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.promo-content button {
+    margin-top: 30px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #38bdf8;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.promo-content button:hover {
+    background-color: #0284c7;
+}

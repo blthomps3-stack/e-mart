@@ -64,7 +64,17 @@ export default function Home() {
             <p>$129.99</p>
             <button>Add to Cart</button>
           </div>
-
+          <section className="promo-section">
+            <div className="promo-content">
+              <h2>Latest Tech Deals</h2>
+              <p>
+                Upgrade your setup with premium electronics,
+                smart devices, and gaming accessories at
+                unbeatable prices.
+              </p>
+              <button>Explore Deals</button>
+            </div>
+          </section>
         </div>
       </section>
     </main>

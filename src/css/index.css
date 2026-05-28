@@ -199,3 +199,38 @@ nav a:hover {
 .promo-content button:hover {
     background-color: #0284c7;
 }
+
+.features-section {
+    padding: 70px 60px;
+    background-color: #111827;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 3rem;
+    margin-bottom: 35px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #1e293b;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.feature-card h3 {
+    color: #38bdf8;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #cbd5e1;
+    font-size: 1.6rem;
+}

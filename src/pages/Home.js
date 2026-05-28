@@ -76,6 +76,26 @@ export default function Home() {
             </div>
           </section>
         </div>
+         <section className="features-section">
+        <h2>Why Shop With Us?</h2>
+
+        <div className="features-grid">
+          <div className="feature-card">
+            <h3>Fast Delivery</h3>
+            <p>Get your electronics delivered quickly and safely.</p>
+          </div>
+
+          <div className="feature-card">
+            <h3>Best Prices</h3>
+            <p>Find premium gadgets at affordable prices.</p>
+          </div>
+
+          <div className="feature-card">
+            <h3>Secure Checkout</h3>
+            <p>Shop with confidence using safe payment options.</p>
+          </div>
+        </div>
+      </section>
       </section>
     </main>
   );

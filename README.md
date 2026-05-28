@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# eMart Mobile Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+eMart Mobile Store is a modern React-based eCommerce web application developed as a group project. The application allows users to browse electronic products, view detailed product information, and explore a professional online shopping interface.
 
-In the project directory, you can run:
+The project uses the FakeStore API to fetch real product data dynamically and demonstrates the use of React components, routing, filtering, reusable UI design, and third-party packages.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Project Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Dynamic product data fetched using FakeStore API
+- Multi-page React application
+- Product detail page with description and pricing
+- Product filtering and sorting functionality
+- Responsive navigation and layout
+- Shopping cart page
+- Custom 404 Not Found page
+- Professional UI design
+- Reusable React components
+- Page animations and transitions using npm packages
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Technologies Used
 
-### `npm run build`
+- React JS
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Axios
+- React Router DOM
+- Framer Motion
+- FakeStore API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Pages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Home Page
 
-### `npm run eject`
+The Home page displays:
+- Hero banner
+- Featured products
+- Product gallery
+- Product filtering buttons
+- Sorting options
+- Promotional sections
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Users can filter products by category and sort products by:
+- Name
+- Price
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Product Detail Page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The Product page displays:
+- Product image
+- Product title
+- Product description
+- Product price
+- Quantity section
+- Add to Cart button
+- Similar product gallery
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Cart Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The Cart page displays:
+- Shopping cart inventory
+- Empty cart message
+- Navigation back to shop
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## NotFound Page
 
-### Analyzing the Bundle Size
+The NotFound page handles invalid routes and displays:
+- 404 message
+- Error description
+- Return to Home button
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+# Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application is built using reusable React components such as:
 
-### Advanced Configuration
+- Header
+- Footer
+- ProductCard
+- Hero Banner
+- Product Gallery
+- Navigation
+- Contact Form
+- Promotional Sections
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+# Routing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The application uses React Router DOM for navigation between pages.
 
-### `npm run build` fails to minify
+Routes included:
+- Home Page
+- Product Detail Page
+- Cart Page
+- Contact Page
+- NotFound Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Any invalid route redirects users to the 404 page.
+
+---
+
+# Author
+
+Developed by Blake , Jaspreet and Roop
+
+---
+
+# GitHub Repository
+
+Project Repository:
+
+[GitHub Repository](https://github.com/blthomps3-stack/e-mart)

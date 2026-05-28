@@ -6,7 +6,7 @@ export default function NotFound() {
       <h1>404</h1>
       <h2>Page Not Found</h2>
       <p>The destination link requested does not exist.</p>
-      <a href="/">Return to Home</a>
+      <a href="/" className="shop-btn">Return to Home</a>
     </main>
   );
 }

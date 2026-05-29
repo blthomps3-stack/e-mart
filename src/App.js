@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Routes, Route, useParams } from 'react-router-dom';
 
-
 function App() {
   return (
     <>

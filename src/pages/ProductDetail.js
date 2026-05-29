@@ -2,6 +2,7 @@ import ProductCard from '../components/ProductCard';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import CartButton from '../components/CartButton';
 
 export default function ProductDetail() {
   
@@ -34,7 +35,7 @@ export default function ProductDetail() {
            <p className="description">
             {product[2]}
           </p>
-          <button>Add to Cart</button>
+          <CartButton id={id}/>
         </div>
       </div>
     </main>

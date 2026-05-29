@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import CartButton from './CartButton';
 
 function ProductCard(props) {
   const [product, setProduct] = useState([]);
@@ -37,9 +38,7 @@ function ProductCard(props) {
         Details
       </a>
 
-      <button type="button">
-        Add to Cart
-      </button>
+      <CartButton id={id}/>
 
     </div>
   );

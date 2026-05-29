@@ -1,8 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
+import axios from 'axios';
 
 
 export default function Home() {
+  const [products, setProducts] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [sortBy, setSortBy] = useState('');
+   
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get('https://fakestoreapi.com/products/category/electronics');
+        setProducts(response.data);
+      } catch (error) {
+        console.error("Error fetching products:", error.message);
+      }
+    };
+    fetchProducts();
+  }, []);
+
+  const filteredProducts = products.filter((product) => {
+    if (selectedCategory === 'All') return true;
+    
+    return product.title.toLowerCase().includes(selectedCategory.toLowerCase()) || 
+           product.description.toLowerCase().includes(selectedCategory.toLowerCase());
+  });
+
+  const sortedProducts = [...filteredProducts].sort((a, b) => {
+    if (sortBy === 'price') {
+      return a.price - b.price; 
+    }
+    if (sortBy === 'name') {
+      return a.title.localeCompare(b.title); 
+    }
+    return 0; 
+  });
 
   return (
     <main>
@@ -16,10 +49,10 @@ export default function Home() {
       <section className="products-section">
 
       <div className="filters">
-        <button type="button">Phones</button>
-        <button type="button">Laptops</button>
-        <button type="button">Accessories</button>
-        <select>
+        <button type="button" onClick={() => setSelectedCategory('Phone')}>Phones</button>
+        <button type="button" onClick={() => setSelectedCategory('Laptop')}>Laptops</button>
+        <button type="button" onClick={() => setSelectedCategory('Accessories')}>Accessories</button>
+        <select onChange={(e) => setSortBy(e.target.value)}>
           <option value="">Sort Products</option>
           <option value="price">Price</option>
           <option value="name">Name</option>
@@ -28,10 +61,9 @@ export default function Home() {
        <h2>Featured Products</h2>
           <div className="products-grid">
 
-          <ProductCard id={'9'}/>
-          <ProductCard id={'10'}/>
-          <ProductCard id={'11'}/>
-          <ProductCard id={'12'}/>
+          {sortedProducts.map((prod) => (
+        <ProductCard key={prod.id} product={prod} />
+    ))}
 
           <section className="promo-section">
             <div className="promo-content">

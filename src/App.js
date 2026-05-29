@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound';
 import ProductDetail from './pages/ProductDetail'; 
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useParams } from 'react-router-dom';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route exact path='/cart' element={<Cart />} />
-            <Route path='/product' element={<ProductDetail />  }/>
+            <Route path='/product/:id' element={<ProductDetail /> }/>
             <Route path='*' element={<NotFound /> } />
           </Routes>
         </div>

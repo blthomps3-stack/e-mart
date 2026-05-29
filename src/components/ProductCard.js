@@ -1,20 +1,39 @@
 import React from 'react';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
-export default function ProductCard() {
+function ProductCard(props) {
+  const [product, setProduct] = useState([]);
+  const id = props.id;
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
+        setProduct([response.data.title, '$' + response.data.price, response.data.category, response.data.image]);
+      } catch (error) {
+        console.log(error.message);
+        setProduct(['Product not found', '$', 'ERROR', '']);
+      }
+    }
+
+    fetchProduct();
+  })
+
   return (
     <div className="product-card">
-
       <span className="category-label">
-        Electronics
+        {product[2]}
       </span>
-
-      <h4>Wireless Headphones</h4>
-
+      <h4>{product[0]}</h4>
+      <img
+        src={product[3]}
+      />
       <p className="product-price">
-        $99.99
+        {product[1]}
       </p>
 
-      <a href="/product" className="details-link">
+      <a href={`/product/${id}`} className="details-link">
         Details
       </a>
 
@@ -25,3 +44,5 @@ export default function ProductCard() {
     </div>
   );
 }
+
+export default ProductCard;

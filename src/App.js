@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound';
 import ProductDetail from './pages/ProductDetail'; 
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import { Routes, Route, useParams } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

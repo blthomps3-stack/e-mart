@@ -1,4 +1,6 @@
 import React from 'react';
+import {FaFacebookF,FaInstagram,FaTwitter,FaYoutube,FaShoppingBag,
+  FaLink,FaPhoneAlt} from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -45,15 +47,21 @@ export default function Footer() {
         </div>
 
       </div>
-
-      <div className="footer-bottom">
-        <div className="social-icons">
-          <span>f</span>
-          <span>◎</span>
-          <span>𝕏</span>
-          <span>▶</span>
+          <div className="footer-socials">
+          <a href="/">
+            <FaFacebookF />
+          </a>
+          <a href="/">
+            <FaInstagram />
+          </a>
+          <a href="/">
+            <FaTwitter />
+          </a>
+          <a href="/">
+            <FaYoutube />
+          </a>
         </div>
-
+      <div className="footer-bottom">
         <p>© 2026 eMart. All Rights Reserved.</p>
       </div>
 

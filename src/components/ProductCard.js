@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CartButton from './CartButton';
 
 function ProductCard({ product }) {
     if (!product) return null;
@@ -11,7 +12,7 @@ function ProductCard({ product }) {
       <img src={product.image} alt={product.title || "Product image"} />
       <p className="product-price"> ${product.price}</p>
       <Link to={`/product/${product.id}`} className="details-link"> Details</Link>
-      <button type="button"> Add to Cart </button>
+      <CartButton/>
     </div>
   );
 }

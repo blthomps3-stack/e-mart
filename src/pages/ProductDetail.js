@@ -39,7 +39,7 @@ export default function ProductDetail() {
             <label>Quantity:</label>
             <input type="number" min="1" defaultValue="1" />
           </div>
-          <button>Add to Cart</button>
+          <CartButton/>
         </div>
       </div>
       <section className="similar-products">

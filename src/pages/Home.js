@@ -1,6 +1,9 @@
 import React from 'react';
+import ProductCard from '../components/ProductCard';
+
 
 export default function Home() {
+
   return (
     <main>
       <section className="hero">
@@ -25,45 +28,11 @@ export default function Home() {
        <h2>Featured Products</h2>
           <div className="products-grid">
 
-          <div className="product-card">
-               <img
-                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
-                alt="Headphones"
-              />
-             <h3>Wireless Headphones</h3>
-            <p>$99.99</p>
-            <button>Add to Cart</button>
-          </div>
+          <ProductCard id={'9'}/>
+          <ProductCard id={'10'}/>
+          <ProductCard id={'11'}/>
+          <ProductCard id={'12'}/>
 
-          <div className="product-card">
-            <img 
-             src='https://images.unsplash.com/photo-1527814050087-3793815479db'
-             alt='Gaming Mouse'
-             />
-            <h3>Gaming Mouse</h3>
-            <p>$79.99</p>
-            <button>Add to Cart</button>
-          </div>
-
-          <div className="product-card">
-             <img
-              src="https://images.unsplash.com/photo-1546868871-7041f2a55e12"
-              alt="Smart Watch"
-            />
-            <h3>Smart Watch</h3>
-            <p>$149.99</p>
-            <button>Add to Cart</button>
-          </div>
-
-          <div className="product-card">
-             <img
-              src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae"
-              alt="Keyboard"
-            />
-            <h3>Mechanical Keyboard</h3>
-            <p>$129.99</p>
-            <button>Add to Cart</button>
-          </div>
           <section className="promo-section">
             <div className="promo-content">
               <h2>Latest Deals</h2>

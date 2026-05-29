@@ -118,15 +118,12 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 90vh;
-
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  padding: 0 80px;
+  padding: 80px 80px 50px;
   max-width: 700px;
-
   position: relative;
   left: auto;
   top: auto;
@@ -834,7 +831,7 @@ body {
   header {
     padding: 30px;
     height: auto;
-    min-height: 90vh;
+    min-height: auto;
     flex-direction: column;
   }
 
@@ -919,7 +916,8 @@ body {
   }
 
   .hero {
-    margin-top: 50px;
+    margin-top: 25px;
+      padding: 20px 0;
   }
 
   .hero h2 {
@@ -1071,4 +1069,61 @@ body {
   .contact-form button {
     width: 100%;
   }
+}
+
+/* Product card details link */
+.product-card a,
+.details-link {
+  display: inline-block;
+  color: #38bdf8;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  border-radius: 12px;
+  margin-right: 12px;
+  font-size: 1.5rem;
+}
+
+.product-card a:hover,
+.details-link:hover {
+  background-color: rgba(56, 189, 248, 0.15);
+  color: white;
+}
+
+/* Better Shopping Cart Inventory */
+.cart-page h2 {
+  color: white;
+  font-size: 3.2rem;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  border-left: 5px solid #38bdf8;
+}
+
+.empty-cart {
+  max-width: 1000px;
+  margin: auto;
+  padding: 55px 60px;
+  border-radius: 24px;
+  text-align: left;
+}
+
+.empty-cart h3 {
+  font-size: 3rem;
+  margin-bottom: 18px;
+}
+
+.empty-cart p {
+  font-size: 1.7rem;
+  color: #d1d5db;
+  margin-bottom: 32px;
+}
+
+.shop-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: white;
+  text-decoration: none;
+  padding: 15px 32px;
+  border-radius: 12px;
+  font-size: 1.6rem;
 }

@@ -668,3 +668,80 @@ nav a:hover {
   color: #d1d5db;
   font-size: 1.4rem;
 }
+
+
+.quantity-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.quantity-box label {
+  font-size: 1.7rem;
+  color: #d1d5db;
+}
+
+.quantity-box input {
+  width: 80px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.similar-products {
+  margin-top: 80px;
+}
+
+.similar-products h2 {
+  color: #38bdf8;
+  font-size: 3rem;
+  margin-bottom: 35px;
+}
+
+.similar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.similar-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 22px;
+  padding: 25px;
+  text-align: center;
+}
+
+.similar-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.similar-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.similar-card p {
+  color: #38bdf8;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.similar-card button {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 export default function ProductDetail() {
   
   const [product, setProduct] = useState([]);
+  const [similarProducts, setSimilarProducts] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function ProductDetail() {
     }
 
     fetchProduct();
-  })
+  }, [id]);
 
   return (
     <main className="product-detail-page">
@@ -30,13 +31,30 @@ export default function ProductDetail() {
         </div>
         <div className="product-info">
         <h2>{product[0]}</h2>
-        <p>{product[1]}</p>
+        <p className='price'>{product[1]}</p>
            <p className="description">
             {product[2]}
           </p>
+            <div className="quantity-box">
+            <label>Quantity:</label>
+            <input type="number" min="1" defaultValue="1" />
+          </div>
           <button>Add to Cart</button>
         </div>
       </div>
+      <section className="similar-products">
+        <h2>Similar Products</h2>
+        <div className="similar-grid">
+          {similarProducts.map(item => (
+            <div className="similar-card" key={item.id}>
+              <img src={item.image} alt={item.title} />
+              <h3>{item.title}</h3>
+              <p>${item.price}</p>
+              <button>View Details</button>
+            </div>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

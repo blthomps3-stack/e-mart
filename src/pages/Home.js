@@ -54,7 +54,6 @@ export default function Home() {
             <p>$149.99</p>
             <button>Add to Cart</button>
           </div>
-
           <div className="product-card">
              <img
               src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae"

@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           <section className="promo-section">
             <div className="promo-content">
-              <h2>Latest Tech Deals</h2>
+              <h2>Latest Deals</h2>
               <p>
                 Upgrade your setup with premium electronics,
                 smart devices, and gaming accessories at
@@ -97,6 +97,7 @@ export default function Home() {
         </div>
       </section>
       </section>
+      
     </main>
   );
 }

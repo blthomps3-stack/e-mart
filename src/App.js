@@ -3,7 +3,10 @@ import ProductCard from './components/ProductCard';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
-import ProductDetail from './pages/ProductDetail';  
+import ProductDetail from './pages/ProductDetail'; 
+import Contact from './pages/Contact';
+import Footer from './pages/Footer';
+
 
 function App() {
   return (
@@ -13,7 +16,9 @@ function App() {
       <ProductCard />
       <Cart />
       <NotFound /> 
-      <ProductDetail />     
+      <ProductDetail />  
+      <Contact />
+      <Footer/>   
     </>
   );
 }

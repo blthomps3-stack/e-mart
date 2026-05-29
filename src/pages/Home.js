@@ -33,7 +33,7 @@ export default function Home() {
           <ProductCard id={'11'}/>
           <ProductCard id={'12'}/>
 
-          <section className="promo-section">
+          {/* <section className="promo-section">
             <div className="promo-content">
               <h2>Latest Deals</h2>
               <p>
@@ -43,7 +43,7 @@ export default function Home() {
               </p>
               <button>Explore Deals</button>
             </div>
-          </section>
+          </section> */}
         </div>
          <section className="features-section">
         <h2>Why Shop With Us?</h2>
